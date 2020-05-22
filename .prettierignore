@@ -1,0 +1,6 @@
+/src/libs/**/three.*
+/src/libs/*.js
+/build/*
+/dist/*
+/utils/*
+/src/mock/regexp/*

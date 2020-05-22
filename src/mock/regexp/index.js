@@ -1,6 +1,4 @@
-var Parser = require('./parser')
-var Handler = require('./handler')
-module.exports = {
-	Parser: Parser,
-	Handler: Handler
-}
+import Parser from './parser'
+import Handler from './handler'
+
+export default { Parser, Handler }

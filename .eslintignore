@@ -1,0 +1,7 @@
+/src/libs/*
+/build/*
+/dist/*
+/utils/*
+/test/*
+/src/mock/regexp/*
+/src/mock/random/*

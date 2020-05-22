@@ -3,22 +3,31 @@
     
     工具类，用于生成各种随机数据。
 */
+import Util from '../util'
 
-var Util = require('../util')
+import basic from './basic'
+import date from './date'
+import image from './image'
+import color from './color'
+import text from './text'
+import name from './name'
+import web from './web'
+import address from './address'
+import helper from './helper'
+import misc from './misc'
 
 var Random = {
-    extend: Util.extend
+  extend: Util.extend,
+  ...basic,
+  ...date,
+  ...image,
+  ...color,
+  ...text,
+  ...name,
+  ...web,
+  ...address,
+  ...helper,
+  ...misc,
 }
 
-Random.extend(require('./basic'))
-Random.extend(require('./date'))
-Random.extend(require('./image'))
-Random.extend(require('./color'))
-Random.extend(require('./text'))
-Random.extend(require('./name'))
-Random.extend(require('./web'))
-Random.extend(require('./address'))
-Random.extend(require('./helper'))
-Random.extend(require('./misc'))
-
-module.exports = Random
+export default Random
